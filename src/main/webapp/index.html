@@ -1,28 +1,66 @@
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
         <title>Chat</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
+        <div class="container">
+            <div class="bloco">
+                <div class="imagem">
+                    <img class="imagem-style-2" src="/src/main/webapp/monitora.png">
+                    <img class="imagem-style" src="/src/main/webapp/governo.png">
+                </div>
+                <table>
+                    <tr>
+                        <td class="display">
+                            <input class="input-text" type="text" id="username" placeholder="Digite seu nome / login"/>
+                            <button class="button-style-2" type="button" onclick="connect();" >Conectar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea class="textarea-style" readonly="true" rows="5" cols="80" id="log" disabled></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="display">
+                            <input class="input-text-2" type="text" id="conteudo" placeholder="Digite sua mensagem"/>
+                            <button type="button" class="btn btn-sm">😁</button>
+                            <button type="button" class="btn btn-sm">😂</button>
+                            <button type="button" class="btn btn-sm">😁</button>
+                            <button type="button" class="btn btn-sm">😂</button>
+                            <button type="button" class="btn btn-sm">😃</button>
+                            <button type="button" class="btn btn-sm">😄</button>
+                            <button type="button" class="btn btn-sm">😅</button>
+                            <button type="button" class="btn btn-sm">😆</button>
+                            <button type="button" class="btn btn-sm">😉</button>
+                            <button type="button" class="btn btn-sm">😊</button>
+                            <button type="button" class="btn btn-sm">😋</button>
+                            <button type="button" class="btn btn-sm">😌</button>
+                            <button type="button" class="btn btn-sm">😍</button>
+                            <button class="button-style" type="button" onclick="send();" >Enviar</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>        
+            //usando jQuery, tudo fica mais fácil!! :)            
+            $("button").click(function() 
+            {
+                var emoji = $( this ).text();
+                $('#conteudo').val($('#conteudo').val() + emoji);
+            }); 
+    </script>
 
-        <table>
-            <tr>
-                <td colspan="2">
-                    <input type="text" id="username" placeholder="Username"/>
-                    <button type="button" onclick="connect();" >Connect</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <textarea readonly="true" rows="10" cols="80" id="log"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" size="51" id="msg" placeholder="Message"/>
-                    <button type="button" onclick="send();" >Enviar</button>
-                </td>
-            </tr>
-        </table>
+
+        -->
+
     </body>
 
     <script src="websocket.js"></script>
