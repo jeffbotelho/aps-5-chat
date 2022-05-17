@@ -24,3 +24,9 @@ function send() {
 
     ws.send(json);
 }
+
+document.addEventListener("keypress", function(e){
+    if(e.key == "Enter"){
+        console.log("apertou")
+    }
+})

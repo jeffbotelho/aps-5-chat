@@ -9,7 +9,6 @@
             <div class="bloco">
                 <div class="imagem">
                     <img class="imagem-style-2" src="/src/main/webapp/monitora.png">
-                    <img class="imagem-style" src="/src/main/webapp/governo.png">
                 </div>
                 <table>
                     <tr>
@@ -25,41 +24,21 @@
                     </tr>
                     <tr>
                         <td class="display">
-                            <input class="input-text-2" type="text" id="conteudo" placeholder="Digite sua mensagem"/>
-                            <button type="button" class="btn btn-sm">😁</button>
-                            <button type="button" class="btn btn-sm">😂</button>
-                            <button type="button" class="btn btn-sm">😁</button>
-                            <button type="button" class="btn btn-sm">😂</button>
-                            <button type="button" class="btn btn-sm">😃</button>
-                            <button type="button" class="btn btn-sm">😄</button>
-                            <button type="button" class="btn btn-sm">😅</button>
-                            <button type="button" class="btn btn-sm">😆</button>
-                            <button type="button" class="btn btn-sm">😉</button>
-                            <button type="button" class="btn btn-sm">😊</button>
-                            <button type="button" class="btn btn-sm">😋</button>
-                            <button type="button" class="btn btn-sm">😌</button>
-                            <button type="button" class="btn btn-sm">😍</button>
+                            <input class="input-text-2" type="text" id="msg" placeholder="Digite sua mensagem"/>
                             <button class="button-style" type="button" onclick="send();" >Enviar</button>
                         </td>
                     </tr>
                 </table>
             </div>
+            <div class="bloco2">
+                <div class="center">
+                    <img class="imagem-style" src="/src/main/webapp/governo.png">
+                </div>
+                <div class="center-2">
+                    <img class="imagem-style-3" src="/src/main/webapp/rio2.png">
+                </div>
+            </div>
         </div>
-    
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script>        
-            //usando jQuery, tudo fica mais fácil!! :)            
-            $("button").click(function() 
-            {
-                var emoji = $( this ).text();
-                $('#conteudo').val($('#conteudo').val() + emoji);
-            }); 
-    </script>
-
-
-        -->
 
     </body>
 
