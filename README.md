@@ -21,7 +21,14 @@ Criar uma aplicação que permita que duas ou mais pessoas possam se comunicar e
 
 Desenvolver uma aplicação web broadcast que possibilite a comunicação entre os inspetores e a Secretaria por meio de mensagens instantâneas de texto.
 
+## Ferramentas e Tecnologias
+- [Java](https://docs.oracle.com/en/java/)
+ - [Maven](https://maven.apache.org/guides/)
+- [SpringBoot](https://spring.io/projects/spring-boot)
+- [JSR 356](https://www.oracle.com/technical-resources/articles/java/jsr356.html)
+- [HTTP](https://devdocs.io/http/)
 
+> É necessário que as tecnologias estejam devidamente configuradas em seu computador para que a aplicação execute corretamente.
 # Instalação
 
 Acesse o local onde deseja baixar o projeto via terminal e execute o comando:
@@ -30,7 +37,9 @@ Acesse o local onde deseja baixar o projeto via terminal e execute o comando:
 
 Logo após, acesse o projeto:
 
-`cd monitoratiete`
+`cd aps-5-chat`
+
+> **Obs.:** as IDEs costuma executar o Java e Maven internamente, o comando a seguir deve rodar sem nenhum problema, porém, é recomendavel ter esse programas instalados em seu computador com as variáveis de ambiente: JAVA_HOME e MAVEN_HOME configuradas.
 
 Dentro do projeto, onde está o arquivo `pom.xml`, execute o comando:
 
@@ -44,7 +53,7 @@ Caso não tenha instalado, baixe o [Tomcat](https://tomcat.apache.org/download-9
 
 Baixe o arquivo compactado compatível ao seu Sistema Operacional.
 
-> **Nota:** Não baixe a versão executável.
+> **Nota:** Não baixe a versão executável. Dê preferência a versão binária
 
 Após o download descompacte-o em uma pasta `tomcat`
 
@@ -59,15 +68,11 @@ Para que nosso arquivo WAR seja implantado e executado no Tomcat, precisaremos c
     2.  `./catalina.sh run` (em sistemas baseados em Unix)
 3.  Vá para _http://localhost:8080/monitoratiete_
 
+>**NOTA:** Configure a viariável de ambiente CATALINA_HOME e execute o tomcat de qualquer terminal 
+
 Esta foi uma configuração rápida do Tomcat, portanto, verifique o guia de [instalação do Tomcat](https://www.baeldung.com/tomcat) para obter um guia de configuração completo. Há também maneiras adicionais de [implantar um arquivo WAR no Tomcat](https://www.baeldung.com/tomcat-deploy-war) .
 
 
-## Ferramentas e Tecnologias
-- [Java](https://docs.oracle.com/en/java/)
- - [Maven](https://maven.apache.org/guides/)
-- [SpringBoot](https://spring.io/projects/spring-boot)
-- [JSR 356](https://www.oracle.com/technical-resources/articles/java/jsr356.html)
-- [HTTP](https://devdocs.io/http/)
 
 ## Melhorias
 
@@ -82,3 +87,5 @@ Esta foi uma configuração rápida do Tomcat, portanto, verifique o guia de [in
 ## Integrantes
 
 - [Jefferson](https://github.com/jeffbotelho)
+- [Breno](https://github.com/Breno49)
+- [Gustavo](https://github.com/Gustavo250475)
