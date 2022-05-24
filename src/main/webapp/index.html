@@ -1,28 +1,45 @@
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
         <title>Chat</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
+        <div class="container">
+            <div class="bloco">
+                <div class="imagem">
+                    <img src="https://i.ibb.co/0QDCrKj/monitora.png"></a>
+                </div>
+                <table>
+                    <tr>
+                        <td class="display">
+                            <input class="input-text" type="text" id="username" placeholder="Digite seu nome / login"/>
+                            <button class="button-style-2" type="button" onclick="connect();" >Conectar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea class="textarea-style" readonly="true" rows="5" cols="80" id="log" disabled></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="display">
+                            <input class="input-text-2" type="text" id="msg" placeholder="Digite sua mensagem"/>
+                            <button class="button-style" type="button" onclick="send();" >Enviar</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bloco2">
+                <div class="center">
+                    <img class="imagem-style" src="https://logodownload.org/wp-content/uploads/2015/12/governo-do-estado-de-sao-paulo-sp-logo.png">
+                </div>
+                <div class="center-2">
+                    <img src="https://i.ibb.co/9Zt3c6Y/rio2.png" style="width: 80%; height: 90%;">
+                </div>
+            </div>
+        </div>
 
-        <table>
-            <tr>
-                <td colspan="2">
-                    <input type="text" id="username" placeholder="Username"/>
-                    <button type="button" onclick="connect();" >Connect</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <textarea readonly="true" rows="10" cols="80" id="log"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" size="51" id="msg" placeholder="Message"/>
-                    <button type="button" onclick="send();" >Send</button>
-                </td>
-            </tr>
-        </table>
     </body>
 
     <script src="websocket.js"></script>
